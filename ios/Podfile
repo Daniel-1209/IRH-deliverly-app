@@ -67,3 +67,6 @@ pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi', :modul
 
 # NOTE: This is required as of v0.23
 pod 'simdjson', path: '../node_modules/@nozbe/simdjson'
+
+# FS
+pod 'RNFS', :path => '../node_modules/react-native-fs'
