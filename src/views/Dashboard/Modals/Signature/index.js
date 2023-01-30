@@ -51,7 +51,8 @@ const SignatureScreen = ({navigation}) => {
 
   const deliver = async () => {
     // FOR NOW: not allow to save without image.
-    if (signature === '' || image.fileName === undefined) {
+    // if (signature === '' || image.fileName === undefined) {
+    if (signature === '') {
       noCompleteAlert();
     } else {
       setCharger(true);

@@ -16,7 +16,10 @@ export const uploadDeliveriesPhotos = async (deliveryId, deliveryData) => {
     formdataPhoto.append('files', {
       name: `foto${Date.now()}`,
       type: 'image/jpeg',
-      uri: `file://${deliveryData.photo}`,
+      // Android
+      // uri: `file://${deliveryData.photo}`,
+      // Ios
+      uri: `${deliveryData.photo}`,
     });
 
     formdataPhoto.append('ref', 'api::delivery.delivery');
@@ -48,7 +51,10 @@ export const uploadDeliveriesPhotos = async (deliveryId, deliveryData) => {
     formdataPhotoReceipt.append('files', {
       name: `firma${Date.now()}`,
       type: 'image/png',
-      uri: `file://${deliveryData.receipt_photo}`,
+      // Android
+      // uri: `file://${deliveryData.receipt_photo}`,
+      // Ios
+      uri: `${deliveryData.receipt_photo}`,
     });
 
     formdataPhotoReceipt.append('ref', 'api::delivery.delivery');
