@@ -108,9 +108,8 @@ const SignatureScreen = ({navigation}) => {
     }
     body {
       height: ${400}px;
-      margin:auto;
       margin-top:10px;
-      width: ${98}%;
+      width: ${80}%;
       background:rgb(218, 189, 240);
     }`;
 
@@ -145,9 +144,7 @@ const SignatureScreen = ({navigation}) => {
               {attributes?.beneficiary_gender === 'M'
                 ? 'ciudadana'
                 : 'ciudadano'}{' '}
-              del estado de Querétaro y recidente en el município Santiago De
-              Querétaro, recibí mi apoyo de parte del Sistema Nacional para el
-              Desarrollo Integral de la Familia
+              del estado de Mexico, recibí mi Beneficio de parte del esta institucion.
             </Text>
             <View
               style={{
